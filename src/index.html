@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.scss">
+    <script src="main.js"></script>
+  </head>
+
+  <body class="p-4">
+    <!-- HEADER -->
+    <section class="header container">
+      <!-- NAV -->
+      <nav
+        class="
+          container
+          w-75
+          nav
+          navbar navbar-expand-lg
+          d-flex
+          flex-row
+          justify-content-center
+          align-content-center align-items-center
+          mb-lg-5
+        "
+      >
+        <img src="./assets/logo.svg" alt="logo" />
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          ></button>
+          <div
+            class="collapse navbar-collapse d-flex justify-content-center"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav text-light d-none d-lg-flex">
+              <li class="nav-item mr-3">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Jobs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Solutions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cart position-relative d-none d-lg-block">
+          <img src="./assets/cart.svg" alt="Shopping Cart" />
+          <span
+            class="
+              position-absolute
+              top-1
+              start-100
+              translate-middle
+              badge
+              rounded-pill
+              bg-danger
+            "
+          >
+            1
+          </span>
+        </div>
+      </nav>
+      <!-- NAV -->
+      <!-- Header content -->
+      <div
+        class="
+          content
+          container
+          d-flex
+          flex-row
+          justify-content-center justify-content-lg-around
+        "
+      >
+        <div class="content__text w-100 mb-5 w-lg-50">
+          <h1 class="content__title text-light fw-bold text-light mb-4 w-25">
+            Digital Marketing
+          </h1>
+          <p class="content__paragraph mb-5">
+            Build your brand, Grow efficiently and reach your highest potential</br>
+            ( Social media management - Branding - SEO - Media buying )
+          </p>
+          <div class="btn content__btn">See Plans</div>
+        </div>
+        <div
+          class="
+            content__img
+            w-50
+            d-none d-lg-flex
+            flex-direction-row
+            justify-content-end
+          "
+        >
+          <img
+            class="d-none d-lg-block"
+            src="./assets/marketing.png"
+            alt="marketing illustrations"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- HEADER -->
+
+    <!-- INFO -->
+    <section class="info container mt-5 m-0 m-lg-5">
+      <div
+        class="
+          content
+          d-flex
+          flex-column
+          align-content-start
+          justify-content-center
+          flex-lg-row
+          justify-content-lg-around
+        "
+      >
+        <div class="card card__1 p-2 m-3 border-none">
+          <div class="card-body border-white">
+            <a href="#" class="btn btn__custom mb-4">Service 1</a>
+            <h5 class="card-title text-bold">Planning and configuration</h5>
+            <p class="card-text">
+              Planning and configuration MEA Telecom will plan a resilient architecture,
+              create a prototype, and define the required project roles and skills for your business.
+            </p>
+          </div>
+          <img
+            src="https://i.ibb.co/1QGvpfq/business-meeting.jpg"
+            class="card-img"
+            loading="lazy"
+            alt="business meeting"
+          />
+        </div>
+
+        <div class="card card__2 m-3 p-1 p-lg-2">
+          <h4 class="card-title text-info text-bold p-1 mb-lg-3">
+            Our Services
+          </h4>
+          <div class="card-body p-0">
+            <h2 class="card-title mb-4 text-bold fs-3">
+              Unleash the Power of Our Integrated Services
+            </h2>
+            <p class="card-text fs-6 mb-5 mb-lg-4">
+              MEA Telecom, has the best IT experts and talent working tirelessly
+              to bring businesses. In all over the world with the best IT
+              services. Planning and configuration - Consulting - IT support
+            </p>
+            <a href="#" class="btn btn__custom--2 mt-5 py-0 py-lg-2">Learn More</a>
+          </div>
+        </div>
+        <div class="blue-circle"></div>
+        <div class="light-blue-circle"></div>
+      </div>
+    </section>
+    <!-- INFO -->
+    <!-- SOLUTIONS-->
+    <section class="solutions container mt-5">
+      <h5 class="text-info text-bold mb-4 text-center text-lg-start">
+        Our solutions
+      </h5>
+      <h2 class="fs-2 solutions__title text-center text-lg-start">
+        Transforming Challenges into Solutions, Our Comprehensive Marketing
+        Strategies
+      </h2>
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 m-1 m-lg-5 g-4">
+        <div class="col">
+          <div class="card d-flex flex-column align-items-center justify-content-center">
+            <iframe src="./assets/icon-1.svg"></iframe>
+            <div class="card-body">
+              <h5 class="card-title text-bold mb-3">Telecom</h5>
+              <p class="card-text fs-4">
+                UC, Contact Center, Leased Line, MPLS and SIP.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card d-flex flex-column align-items-center justify-content-center">
+            <iframe src="./assets/icon-2.svg"></iframe>
+            <div class="card-body">
+              <h5 class="card-title text-bold">Development</h5>
+              <p class="card-text">Web Design, UI/UX, Android & IOS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card d-flex flex-column align-items-center justify-content-center">
+            <iframe src="./assets/icon-3.svg"></iframe>
+            <div class="card-body">
+              <h5 class="card-title text-bold">Digital Marketing</h5>
+              <p class="card-text">
+                SEO, Social Media Marketing, Email Marketing,Graphics design and
+                Digital Signage.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card d-flex flex-column align-items-center justify-content-center">
+            <iframe src="./assets/icon-4.svg"></iframe>
+            <div class="card-body">
+              <h5 class="card-title text-bold">Networking</h5>
+              <p class="card-text">
+                Network solutions to meet the needs of bothmid-sized businesses
+                and high-density enterprises.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card d-flex flex-column align-items-center justify-content-center">
+            <iframe src="./assets/icon-5.svg"></iframe>
+            <div class="card-body">
+              <h5 class="card-title text-bold">Cloud Solutions</h5>
+              <p class="card-text">VMs & D.C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card d-flex flex-column align-items-center justify-content-center">
+            <iframe src="./assets/icon-6.svg"></iframe>
+            <div class="card-body">
+              <h5 class="card-title text-bold">Security</h5>
+              <p class="card-text">
+                Email Security, Web Security, Cyber Security,Access & Alarm
+                Systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SOLUTIONS-->
+
+    <!-- SEO -->
+    <section
+      class="
+        container
+        seo
+        d-flex
+        flex-column
+        justify-content-center
+        align-items-center
+        p-5 p-lg-0
+      "
+    >
+      <h4 class="mb-4 mb-lg-5">PRICING PLAN</h4>
+      <h1 class="mb-4 mb-lg-5">Seo Packages</h1>
+      <div
+        class="
+          w-75
+          seo-cards
+          d-flex
+          flex-column flex-lg-row
+          justify-content-center justify-content-lg-around
+        "
+      >
+        <div class="seo-cards__1 mb-5 mb-lg-0 d-flex flex-column">
+          <img src="./assets/frame-7.png" alt="Business"/>
+        </div>
+        <div class="seo-cards__2 d-flex flex-column">
+          <img src="./assets/frame-8.png" alt="Professional"/> 
+        </div>
+      </div>
+    </section>
+    <!-- SEO -->
+    <!--TESTIMONIALS-->
+    <section class="testimonials my-5">
+      <div
+        class="
+          testimonials__content
+          d-flex
+          flex-column flex-lg-row
+          justify-content-around justify-content-lg-around
+          align-items-around align-items-lg-center
+          p-lg-5
+          p-1
+          m-2 m-lg-0
+        "
+      >
+        <div class="w-100 w-lg-50 text-center text-lg-start">
+          <h2 class="text-info fs-4 mb-3 mb-lg-4">Testimonials</h2>
+          <h1 class="text-bold mb-4">What our clients say?</h1>
+          <p class="w-100 w-lg-75 mb-4 mb-lg-5 fs-4">
+            Client Testimonials: The Impact of Our Marketing Agency on Their
+            Business Growth and Success
+          </p>
+          <a href="#" class="testimonials__btn px-5 py-3">Learn More</a>
+        </div>
+        <div
+          class="
+            w-100 w-lg-50
+            d-flex
+            flex-column
+            justify-content-center
+            align-items-center
+            mt-5 mt-lg-0
+            testimonials__info
+          "
+        >
+          <div>
+            <img class="" src="./assets/smiling-woman.png" alt="smiling woman" />
+          </div>
+
+          <div class="d-flex flex-column testimonials__last mt-5 mt-lg-0">
+            <p>
+              "Working with Mea telecom has been a game-changer for our brand.
+              Their deep understanding of our industry, combined with their
+              creative strategies, has helped us reach new audiences and
+              increase our market share. Their team is responsive,
+              collaborative, and always goes the extra mile to ensure our
+              campaigns are a success"
+            </p>
+            <div class="d-flex flex-column flex-lg-row justify-content-around align-items-center justify-content-lg-between fs-4">
+              <span class="text-secondary fs-5 text-bold mb-3 mb-lg-0">ahmedGad_Dev</span>
+              <div class="d-flex flex-column ">
+                <div class="d-flex flex-row justify-content-around mb-3 mb-lg-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                    />
+                  </svg>
+                </div>
+                <span class="fs-6">12 reviews at Yelp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--TESTIMONIALS-->
+    <footer class="footer d-flex justify-content-lg-center p-1 p-lg-5">
+      <div
+        class="
+          d-flex
+          flex-column flex-lg-row
+          justify-content-center
+          align-content-center align-items-center
+          text-white
+          p-1
+          p-lg-5
+        "
+      >
+        <div class="w-100 w-lg-25 m-2 mb-4 mb-lg-0">
+          <iframe src="./assets/logo.svg"></iframe>
+          <p class="w-75 w-lg-50">
+            Providing our clients with outstanding and services. services
+            combined with innovative solutions, in addition to reasonable fees
+            for each service.
+          </p>
+        </div>
+        <div class="w-100 w-lg-25 m-2 mb-4 mb-lg-0">
+          <h2 class="mb-2 mb-lg-5">Keep in Touch</h2>
+          <p class="w-lg-50">
+            info@meatelecom.com605 Centurion Building, St. 34 Port Saeed, Dubai,
+            UAE+971 4 894 8914
+          </p>
+        </div>
+
+        <div class="w-100 w-lg-25 m-2 mb-lg-0">
+          <h2 class="mb-2 mb-lg-5">Newsletter</h2>
+          <p class="w-lg-50 mb-5">
+            Subscribe to our newsletter and stay up to date with our latest news
+            Providing our clients with outstanding and services.
+          </p>
+          <div class="form d-flex flex-row">
+            <input
+              type="text"
+              id="inputPassword5"
+              placeholder="Your email..."
+              class="form-control w-50 h-75"
+            />
+            <div class="btn btn-info btn-form text-white text-bold pl-0">
+              Get started
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

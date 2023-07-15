@@ -1,0 +1,278 @@
+// $primary: #276fc2;
+// $secondary: #e8d21d;
+// $border-radius: 1px;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+/*Variables*/
+$dark-blue: rgb(15, 12, 69);
+$light-blue: rgb(9, 165, 216);
+$pink: rgb(238, 165, 160);
+$gray: rgb(205, 216, 255);
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+f1,
+f2,
+f3,
+f4,
+f5,
+f6 {
+  font-weight: bold;
+}
+
+.header {
+  width: 100%;
+  height: 873px;
+  background-image: linear-gradient(rgb(15, 35, 92), rgb(15, 12, 69));
+  .nav {
+    z-index: 1;
+    background: transparent;
+
+    .nav-link {
+      color: white;
+    }
+    .active {
+      border-bottom: 1px solid rgb(9, 165, 216);
+    }
+    .cart {
+      background-color: $light-blue;
+      border-radius: 50%;
+      padding: 10px;
+      display: flex;
+    }
+  }
+  .image {
+    width: 400px;
+    height: 400px;
+  }
+  .content {
+    margin-top: 160px;
+    &__text {
+      font-size: 18px;
+    }
+    &__title {
+      font-size: 76px;
+      line-height: 94.5px;
+      @media (max-width: 992px) {
+        font-size: 45px;
+        line-height: 55px;
+      }
+    }
+    &__paragraph {
+      color: $gray;
+      font-weight: 300;
+      line-height: 33px;
+    }
+    &__btn {
+      top: 359px;
+      padding: 17px 44px 17px 44px;
+      border-radius: 16px;
+      gap: 10px;
+      background-color: #09a5d8;
+      color: white;
+      line-height: 25px;
+      font-size: 20px;
+    }
+    @media (max-width: 992px) {
+      height: auto;
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 992px) {
+    height: auto;
+  }
+}
+
+.info {
+  width: 100%;
+  height: 607px;
+  color: rgb(15, 12, 69);
+  margin-bottom: 100px;
+  .content {
+    margin-top: 120px;
+    width: 100%;
+    position: relative;
+    .card {
+      z-index: 1;
+      .btn {
+        &__custom {
+          background-color: #cdd8ff;
+          color: $dark-blue;
+          border-radius: 25px;
+          font-size: 18px;
+          position: relative;
+          left: 0;
+          padding: 10px 25px;
+          width: 50%;
+          text-align: start;
+          @media (max-width: 992px) {
+            width: 80%;
+          }
+
+          &--2 {
+            background-color: $dark-blue;
+            color: white;
+            width: 160px;
+            border-radius: 12px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 20px, 38px, 20px, 38px;
+          }
+        }
+      }
+      &__1 {
+        max-width: 465px;
+        height: 562px;
+        color: #55578d;
+        box-shadow: 10px -4px 25px #f6f6f6;
+        border: none;
+        .card-img {
+          margin-left: 30px;
+          border-radius: 20px;
+          @media (max-width: 992px) {
+            margin-left: 0;
+            position: relative;
+            top: -70px;
+          }
+        }
+      }
+      &__2 {
+        max-width: 550px;
+        height: 320px;
+        padding: 0;
+        color: black;
+      }
+    }
+    .light-blue-circle {
+      background-color: $light-blue;
+      border-radius: 50%;
+      width: 23px;
+      height: 23px;
+      position: absolute;
+      top: -35px;
+      left: 130px;
+    }
+
+    .blue-circle {
+      background-color: $dark-blue;
+      border-radius: 50%;
+      width: 99.5px;
+      height: 99.5px;
+      position: absolute;
+      top: -10px;
+      left: 0px;
+    }
+  }
+  @media (max-width: 992px) {
+    height: auto;
+  }
+}
+
+.solutions {
+  width: 100%;
+  height: 855px;
+  font-family: 'Roboto';
+  margin-top: 50px;
+  .card {
+    border: none;
+    iframe {
+      width: 120px;
+      height: 110px;
+    }
+    .card-body {
+      width: auto;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    width: 75%;
+    font-weight: bold;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 992px) {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.seo {
+  width: 100%;
+  height: 1155px;
+  color: white;
+  background-color: $dark-blue;
+
+  .seo-cards {
+    border-radius: 30px;
+    .card-list {
+      list-style-type: none;
+    }
+  }
+  @media (max-width: 992px) {
+    height: auto;
+    margin-top: 100px;
+  }
+}
+
+.testimonials {
+  width: 100%;
+
+  &__btn {
+    background-color: $dark-blue;
+    color: white;
+    width: 160px;
+    border-radius: 12px;
+    padding: 20px, 38px, 20px, 38px;
+  }
+  .testimonials__info {
+    position: relative;
+  }
+
+  .testimonials__last {
+    position: absolute;
+    color: #5f5f7e;
+    background-color: white;
+    bottom: 20px;
+    right: -20px;
+    bottom: -150px;
+    border-radius: 20px;
+    width: 75%;
+    border-left: 15px solid $pink;
+    padding: 50px;
+    @media (max-width: 992px) {
+      min-width: 100%;
+      padding: 10px;
+      right: 0;
+    }
+  }
+  @media (max-width: 992px) {
+    height: auto;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 632px;
+  background-color: $dark-blue;
+  margin-top: 200px;
+  .btn-form {
+    margin-left: -10px;
+    margin-top: -2.5px;
+  }
+
+  @media (max-width: 992px) {
+    height: auto;
+  }
+}
