@@ -1,8 +1,11 @@
 {
+  "homepage": "http://ahmedGad-dev.github.io/mea-telecom ",
   "name": "node-starter",
   "version": "0.0.0",
   "scripts": {
-    "start": "webpack serve"
+    "start": "webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
